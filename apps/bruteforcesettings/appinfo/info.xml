@@ -8,7 +8,7 @@
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
 	<default_enable/>
-	<version>1.0.0</version>
+	<version>1.0.6</version>
 	<dependencies>
 		<owncloud min-version="9.2" max-version="9.2" />
 	</dependencies>
@@ -16,6 +16,6 @@
 	<namespace>BruteForceSettings</namespace>
 
 	<settings>
-		<admin-section>OCA\BruteForceSettings\Settings\IPWhitelist</admin-section>
+		<admin>OCA\BruteForceSettings\Settings\IPWhitelist</admin>
 	</settings>
 </info>
