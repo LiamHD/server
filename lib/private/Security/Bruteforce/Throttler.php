@@ -189,7 +189,7 @@ class Throttler {
 	 * Check if the IP is whitelisted
 	 *
 	 * @param string $ip
-	 * @return false;
+	 * @return bool
 	 */
 	private function isIPWhitelisted($ip) {
 		$keys = $this->config->getAppKeys('bruteForce');
