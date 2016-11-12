@@ -119,8 +119,6 @@
 		},
 
 		_addWhitelist: function() {
-			var _this = this;
-
 			this.collection.create({
 				ip: this.ipInput.val(),
 				mask: this.maskInput.val()
