@@ -42,7 +42,7 @@ script('bruteforcesettings', [
 		</tbody>
 	</table>
 
-	<input type="text" name="whitelist_ip" id="whitelist_ip" placeholder="<?php p($l->t('1.2.3.4')); ?>" style="width: 200px;" />/
-	<input type="number" id="whitelist_mask" name="whitelist_mask" placeholder="<?php p($l->t('24')); ?>" style="width: 50px;">
+	<input type="text" name="whitelist_ip" id="whitelist_ip" placeholder="1.2.3.4" style="width: 200px;" />/
+	<input type="number" id="whitelist_mask" name="whitelist_mask" placeholder="24" style="width: 50px;">
 	<input type="button" id="whitelist_submit" value="<?php p($l->t('Add')); ?>">
 </form>
