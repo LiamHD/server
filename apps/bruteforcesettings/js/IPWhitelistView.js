@@ -28,7 +28,7 @@
 		'<tr data-id="{{id}}">'
 		+ '<td><span>{{ip}}/{{mask}}</span></td>'
 		+ '<td><a class="icon-delete has-tooltip" title="' + t('bruteforcesettings', 'Delete') + '">BAD CSS</a></td>'
-		+ '<tr>';
+		+ '</tr>';
 
 	OCA.BruteForceSettings.WhitelistView = OC.Backbone.View.extend({
 		collection: null,
@@ -98,14 +98,14 @@
 			var $row = $target.closest('tr');
 			var id = $row.data('id');
 
-			var retention = this.collection.get(id);
+			var whitelist = this.collection.get(id);
 
-			if (_.isUndefined(retention)) {
+			if (_.isUndefined(whitelist)) {
 				// Ignore event
 				return;
 			}
 
-			var destroyingRetention = retention.destroy();
+			var destroyingRetention = whitelist.destroy();
 
 			$row.find('.icon-delete').tooltip('hide');
 
