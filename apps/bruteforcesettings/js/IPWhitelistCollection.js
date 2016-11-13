@@ -27,6 +27,8 @@
 	OCA.BruteForceSettings.WhitelistCollection = OC.Backbone.Collection.extend({
 		model: OCA.BruteForceSettings.WhitelistModel,
 
-		url: OC.generateUrl('/apps/bruteforcesettings/ipwhitelist')
+		url: function() {
+			return OC.generateUrl('/apps/bruteforcesettings/ipwhitelist');
+		}
 	});
 })();
