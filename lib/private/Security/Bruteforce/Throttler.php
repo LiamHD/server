@@ -210,9 +210,6 @@ class Throttler {
 
 		foreach ($keys as $key) {
 			$cidr = $this->config->getAppValue('bruteForce', $key, null);
-			if ($cidr === null) {
-				continue;
-			}
 
 			$cx = explode('/', $cidr);
 			$addr = $cx[0];

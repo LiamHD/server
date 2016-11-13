@@ -172,6 +172,11 @@ class ThrottlerTest extends TestCase {
 				],
 				true,
 			],
+			[
+				'invalid',
+				[],
+				false,
+			],
 		];
 	}
 
